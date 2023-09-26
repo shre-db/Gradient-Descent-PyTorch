@@ -6,17 +6,15 @@
 
 Gradient Descent is an optimization algorithm used to minimize a differentiable function. It's widely used in machine learning and deep learning to find the minimum of a loss or cost function.
 
-## Objective
-
-Minimize a differentiable function $f(x)$ with respect to a parameter vector $x$.
+The objective of gradient descent algorithm is to minimize a differentiable function $f(x)$ with respect to a parameter vector $x$.
 
 ## Algorithm
 
-### Initialization
+#### Initialization
 1. Start with an initial guess for the parameter vector $x$, denoted as $x_0$.
 2. Choose a learning rate $\alpha$, which determines the step size in the parameter space.
 
-### Iteration
+#### Iteration
 For each iteration $t$ update the parameter vector $x$ as follows:
 $$x_{t+1} = x_t - \alpha \nabla f(x_t)$$
 where:<br>
@@ -25,7 +23,7 @@ where:<br>
 $$\nabla f(x_t) = \Bigg [ \frac{\partial{f(x)}}{\partial{x_1}}, \frac{\partial{f(x)}}{\partial{x_2}},..., \frac{\partial{f(x)}}{\partial{x_n}}  \Bigg ]$$
 - $\alpha$ is the learning rate, a hyperparameter that controls the step size in the parameter space. It is typicaly a small positive value.
 
-### Termination
+#### Termination
 Repeat the iteration step until one of the stopping criteria is met, such as a maximum number of iterations or when the change in the objective function becomes sufficiently small.
 
 
