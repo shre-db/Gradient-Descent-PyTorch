@@ -1,4 +1,4 @@
-# Gradient-Descent-PyTorch
+# Gradient Descent in PyTorch
 
 ![Gradient Descent gif](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Gradient_descent.gif/640px-Gradient_descent.gif)
 
@@ -21,7 +21,7 @@ For each iteration $t$ update the parameter vector $x$ as follows:
 $$x_{t+1} = x_t - \alpha \nabla f(x_t)$$
 where:<br>
 - $x_t$ is the parameter vector at iteration $t$.
-- $\nabla f(x_t)$ is the gradient of the function $f(x)$ at $x_t, which is a vector contraining the partial derivatives of $f$ with respect to each component of $x$. Mathematically, it is expressed as:
+- $\nabla f(x_t)$ is the gradient of the function $f(x)$ at $x_t$, which is a vector contraining the partial derivatives of $f$ with respect to each component of $x$. Mathematically, it is expressed as:
 $$\nabla f(x_t) = \Bigg [ \frac{\partial{f(x)}}{\partial{x_1}}, \frac{\partial{f(x)}}{\partial{x_2}},..., \frac{\partial{f(x)}}{\partial{x_n}}  \Bigg ]$$
 - $\alpha$ is the learning rate, a hyperparameter that controls the step size in the parameter space. It is typicaly a small positive value.
 
@@ -44,4 +44,4 @@ The process stops when a termination condition is met, such as reaching a maximu
 ## Implementation
 In this project, the gradient descent algorithm is demonstrated using a simple loss function using PyTorch's autograd capabilities.
 
-The function $f(x) = x^2 + 4x + 4$ is used as the loss function and the parameter $x$ is randomly initialized. Mathematically, the minimum of this function occurs at $x$ = 2. We use `backward()` method provided by PyTorch to compute gradients associated with the tensor and then visualize the convergence of loss to the global minima. 
+The function $f(x) = x^2 + 4x + 4$ is used as the loss function and the parameter $x$ is randomly initialized. Mathematically, the minimum of this function occurs at $x=2$. We use `backward()` method provided by PyTorch to compute gradients associated with the tensor and then visualize the convergence of loss to the global minima. 
